@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-4xl font-bold text-center mt-5">Deposit and Withdraw <span class="text-blue-500">Your Money</span></h1>
+    </header>
+
+    <main>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  mx-16 lg:mx-36 mt-8">
+            <div class="bg-green-300 rounded-xl p-5 py-16 text-center">
+                <h4 class="text-2xl font-semibold ">Deposit</h4>
+                <h2 class="text-3xl font-bold">$<span id="deposit-amount">00</span></h2>
+            </div>
+            <div class="bg-red-300 rounded-xl p-5 py-16 text-center">
+                <h4 class="text-2xl font-semibold ">Withdraw</h4>
+                <h2 class="text-3xl font-bold">$<span id="withdraw-amount">00</span></h2>
+            </div>
+            <div class="bg-purple-300 md:col-span-2 lg:col-span-1 rounded-xl p-5 py-16 text-center">
+                <h4 class="text-2xl font-semibold ">Total</h4>
+                <h2 class="text-3xl font-bold">$<span id="total-amount">800</span></h2>
+            </div>
+        </div>
+
+        <div class="mt-16 lg:mx-36 grid lg:grid-cols-2">
+            <div class="bg-green-200 px-5 py-16 m-5 rounded-2xl w-9/12 mx-auto">
+                <input class="block mb-4 w-1/2 mx-auto p-2 rounded-xl" type="email" name="" id="deposit-field" placeholder="Enter Deposit Money">
+        
+                <button id="btn-deposit" class="bg-blue-300 block text-black font-semibold text-xl px-4 py-2 rounded-xl w-1/2 mx-auto mt-4">Deposit</button>
+            </div>
+
+            <div class="bg-red-200 px-5 py-16 m-5 rounded-2xl w-9/12 mx-auto">
+                <input class="block mb-4 w-1/2 mx-auto p-2 rounded-xl" type="email" name="" id="withdraw-field" placeholder="Withdraw Your Money">
+        
+                <button id="btn-withdraw" class="bg-blue-300 block text-black font-semibold text-xl px-4 py-2 rounded-xl w-1/2 mx-auto mt-4">Withdraw</button>
+            </div>
+        </div>
+
+        <script src="js/front.js"></script>
+        <script src="js/calculation.js"></script>
+    </main>
+</body>
+</html>
